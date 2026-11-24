@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#ff8358">
+<meta name="theme-color" content="#071633">
 <meta name="description" content="Keys to the City: a Singapore property match-3 game by Patrick Low. Match homes from Tampines to Marina Bay.">
 <title>Keys to the City</title>
 <link rel="manifest" href="/manifest.webmanifest">
@@ -23,9 +23,9 @@
    PICTURE the board itself, over a sunset skyline of Supertrees, HDB blocks, shophouses, MBS and the Flyer
    COLOUR and TYPE  coral sunset sky, plum city, MRT-red accent, pieces in line colours; Baloo 2
    LAYOUT one centred column sized to the phone: HUD, square board, boosters */
-:root{--s1:#ff8358;--s2:#ffb26b;--s3:#ffdc9a;--city:#3b1d4a;--sun:#fff1b8;--ink:#2a1440;--soft:#6a4870;--card:rgba(255,250,244,.9);--panel:#fffaf3;--edge:rgba(42,20,64,.14);--frame:#3b1d4a;--ca:#fff8ee;--cb:#ffeedc;--win:rgba(255,240,200,.25);--red:#d42e12;color-scheme:light}
-@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--s1:#0e0724;--s2:#231147;--s3:#3f1d5c;--city:#07030f;--sun:#f1ecd4;--ink:#fff4e8;--soft:#cdb6da;--card:rgba(32,17,58,.9);--panel:#22133f;--edge:rgba(255,255,255,.14);--frame:#120828;--ca:#2c1d4b;--cb:#352557;--win:#ffd27a;color-scheme:dark}}
-:root[data-theme=dark]{--s1:#0e0724;--s2:#231147;--s3:#3f1d5c;--city:#07030f;--sun:#f1ecd4;--ink:#fff4e8;--soft:#cdb6da;--card:rgba(32,17,58,.9);--panel:#22133f;--edge:rgba(255,255,255,.14);--frame:#120828;--ca:#2c1d4b;--cb:#352557;--win:#ffd27a;color-scheme:dark}
+:root{--s1:#071633;--s2:#0c2252;--s3:#163a7a;--city:#040b1f;--sun:#f3e9c6;--ink:#2a1440;--soft:#6a4870;--card:rgba(255,250,244,.9);--panel:#fffaf3;--edge:rgba(42,20,64,.14);--frame:#061231;--ca:#fff8ee;--cb:#ffeedc;--win:rgba(255,210,122,.6);--red:#d42e12;--on:#fff7ec;--onsoft:#b9c6e6;color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--s1:#030a1c;--s2:#071430;--s3:#0d2350;--city:#01040d;--sun:#f1ecd4;--ink:#fff4e8;--soft:#b9c6e6;--card:rgba(12,26,60,.92);--panel:#0d1c42;--edge:rgba(255,255,255,.14);--frame:#020818;--ca:#16274e;--cb:#1c2f5c;--win:#ffd27a;color-scheme:dark}}
+:root[data-theme=dark]{--s1:#030a1c;--s2:#071430;--s3:#0d2350;--city:#01040d;--sun:#f1ecd4;--ink:#fff4e8;--soft:#b9c6e6;--card:rgba(12,26,60,.92);--panel:#0d1c42;--edge:rgba(255,255,255,.14);--frame:#020818;--ca:#16274e;--cb:#1c2f5c;--win:#ffd27a;color-scheme:dark}
 *{box-sizing:border-box;min-width:0}
 html,body{margin:0}
 body{font:16px/1.5 'Baloo 2',ui-rounded,system-ui,sans-serif;color:var(--ink);background:linear-gradient(180deg,var(--s1),var(--s2) 55%,var(--s3)) fixed;min-height:100vh;min-height:100dvh;overflow-x:clip;-webkit-tap-highlight-color:transparent;touch-action:manipulation;-webkit-user-select:none;user-select:none;padding:env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left)}
@@ -47,6 +47,7 @@ main{position:relative;z-index:1}
 /* map */
 #map{max-width:640px;margin:0 auto;padding:14px 16px 170px}
 .top{display:flex;justify-content:flex-end}
+.hero,.lvn b{color:var(--on)}.hero .by,.lvn span{color:var(--onsoft)}
 .hero h1{font-size:clamp(42px,12vw,64px);line-height:1;margin:0;font-weight:800;text-wrap:balance}
 .hero p{margin:8px 0 0;font-size:17px;max-width:32em}
 .panel{background:var(--card);border-radius:22px;padding:16px 18px;margin-top:16px;box-shadow:0 3px 0 var(--edge)}
@@ -77,7 +78,7 @@ main{position:relative;z-index:1}
 .w{width:min(96vw,max(var(--bs),340px))}
 .bar{display:flex;align-items:center;gap:10px}
 .lvn{flex:1;text-align:center;line-height:1.1}
-.lvn span{font-size:13px;color:var(--soft);display:block}.lvn b{font-size:21px}
+.lvn span{font-size:13px;display:block}.lvn b{font-size:21px}
 #back{width:auto;padding:0 14px;font-weight:700;gap:4px;display:flex}
 .hud{display:grid;grid-template-columns:auto minmax(0,1fr);gap:4px 12px;background:var(--card);border-radius:20px;padding:10px 16px 10px 10px;box-shadow:0 3px 0 var(--edge)}
 .mv{grid-row:span 2;display:grid;place-content:center;text-align:center;background:var(--red);color:#fff;border-radius:16px;width:68px;line-height:1;padding:6px 0}

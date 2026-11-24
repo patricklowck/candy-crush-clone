@@ -1,6 +1,6 @@
 /* Keys to the City service worker: lets the game load and play offline.
    Bump VERSION whenever you change index.html or the icons so phones pick up the update. */
-const VERSION = 'ktc-v1';
+const VERSION = 'ktc-v2';
 const CORE = [
   '/',
   '/manifest.webmanifest',
