@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ff7a52"/>
+      <stop offset=".6" stop-color="#ffab62"/>
+      <stop offset="1" stop-color="#ffd28c"/>
+    </linearGradient>
+    <radialGradient id="glow" cx=".5" cy=".5" r=".5">
+      <stop offset=".55" stop-color="#fff4c4"/>
+      <stop offset="1" stop-color="#fff4c4" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="512" height="512" fill="url(#sky)"/>
+  <circle cx="256" cy="238" r="200" fill="url(#glow)" opacity=".7"/>
+  <circle cx="256" cy="238" r="132" fill="#fff1b8"/>
+  <!-- skyline: supertrees, HDB blocks, shophouses, MBS, Flyer -->
+  <g fill="#3b1d4a">
+    <path d="M38 512 46 404h10l8 108z"/><path d="M8 400q43-34 86 0l-12 12H20z"/>
+    <rect x="98" y="378" width="62" height="134"/><rect x="166" y="404" width="50" height="108"/>
+    <path d="M222 512v-56l13-16h28l13 16v56zM280 512v-52l13-16h28l13 16v52z"/>
+    <path d="M346 512l4-120h20l4 120zM380 512l2-120h20l4 120zM414 512l1-120h20l5 120z"/>
+    <path d="M334 382h118c5 0 6 4 3 8l-3 4H338c-5 0-6-5-4-12z"/>
+    <rect x="0" y="500" width="512" height="12"/>
+  </g>
+  <g fill="#ffd27a" opacity=".55">
+    <rect x="108" y="392" width="8" height="6"/><rect x="124" y="392" width="8" height="6"/><rect x="140" y="408" width="8" height="6"/><rect x="108" y="424" width="8" height="6"/><rect x="124" y="440" width="8" height="6"/><rect x="140" y="456" width="8" height="6"/>
+    <rect x="176" y="418" width="8" height="6"/><rect x="192" y="434" width="8" height="6"/><rect x="176" y="450" width="8" height="6"/>
+  </g>
+  <!-- the key: a house-shaped bow, the key to the city -->
+  <g transform="translate(266 232) scale(1.14) rotate(-28) translate(-258 -236)" stroke="#2a1440" stroke-width="16" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M240 214h168a14 14 0 0 1 14 14v18a14 14 0 0 1-14 14h-10v44h-36v-44h-20v30h-36v-30h-66z" fill="#8e2aa8"/>
+    <path d="M96 214 172 150l76 64v96a10 10 0 0 1-10 10H106a10 10 0 0 1-10-10z" fill="#a63ac2"/>
+    <rect x="138" y="232" width="68" height="62" rx="6" fill="#fff4e0" stroke-width="12"/>
+    <path d="M172 232v62M138 263h68" stroke-width="9"/>
+    <path d="M116 216 166 174" stroke="#e7b3f5" stroke-width="12" fill="none"/>
+    <path d="M262 226h120" stroke="#c77de0" stroke-width="9" fill="none"/>
+  </g>
+</svg>
